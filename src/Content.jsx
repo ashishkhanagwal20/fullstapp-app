@@ -1,11 +1,16 @@
 const Content = ({ parts }) => {
-  console.log(parts[0].name);
+  console.log("parts", parts);
   return (
-    <>
-      <p>{parts[0].name}</p>
-      <p>{parts[1].name}</p>
-      <p>{parts[2].name}</p>
-    </>
+    <div>
+      <ul>
+        {parts.map((part) => (
+          <li key={part.id}>
+            {console.log(part)}
+            {part.name} {part.exercises}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

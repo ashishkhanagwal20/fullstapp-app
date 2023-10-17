@@ -1,11 +1,5 @@
-const Header = ({ course }) => {
-  console.log("header");
-  console.log(course);
-  return (
-    <>
-      <h1>{course}</h1>
-    </>
-  );
+const Header = ({ name }) => {
+  return <h2>{name}</h2>;
 };
 
 export default Header;
